@@ -1,13 +1,17 @@
 # Job Listings Application
 
-A React-based web application for browsing and viewing job listings. Built with Vite, React, and Tailwind CSS.
+A React-based web application for managing job listings with full CRUD operations. Built with Vite, React, and Tailwind CSS.
 
 ## Features
 
 - Browse job listings with details like title, type, location, salary, and company information.
+- Add new job listings.
+- Edit existing job listings.
+- Delete job listings.
 - Responsive design using Tailwind CSS.
 - Modular components for navigation, hero section, home cards, job listings, and viewing all jobs.
 - Sample job data stored in JSON format.
+- Backend simulation using JSON Server for API endpoints.
 
 ## Tech Stack
 
@@ -39,7 +43,13 @@ A React-based web application for browsing and viewing job listings. Built with 
 
 ## Usage
 
-To run the application in development mode:
+To run the backend simulation (JSON Server):
+
+```bash
+npm run server
+```
+
+To run the application in development mode (in a separate terminal):
 
 ```bash
 npm run dev
@@ -80,7 +90,17 @@ joblistings/
 │   │   ├── JobListing.jsx
 │   │   ├── JobListings.jsx
 │   │   ├── Navbar.jsx
+│   │   ├── Spinner.jsx
 │   │   └── ViewAllJobs.jsx
+│   ├── layouts/
+│   │   └── MainLayout.jsx
+│   ├── pages/
+│   │   ├── AddJobPage.jsx
+│   │   ├── EditJobPage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── JobPage.jsx
+│   │   ├── JobsPage.jsx
+│   │   └── NotFoudPage.jsx
 │   ├── App.jsx
 │   ├── index.css
 │   ├── jobs.json
